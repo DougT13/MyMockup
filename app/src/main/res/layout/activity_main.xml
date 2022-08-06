@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="30dp"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:id="@+id/layHelloYou"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp">
+
+        <TextView
+            android:id="@+id/txtHello"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:fontFamily="@font/comfortaalight"
+            android:text="Hello"
+            android:textSize="60dp" />
+
+        <TextView
+            android:id="@+id/txtYou"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtHello"
+            android:layout_gravity="center_horizontal"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="60dp"
+            android:fontFamily="@font/comfortaabold"
+            android:text="You"
+            android:textSize="60dp" />
+
+
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+    <View
+        android:layout_width="150dp"
+        android:id="@+id/viewLinha"
+        android:layout_height="3dp"
+        android:layout_centerInParent="true"
+        android:layout_below="@+id/layHelloYou"
+        android:background="#673AB7"/>
+
+    <TableLayout
+        android:id="@+id/layTable"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/layHelloYou"
+        android:layout_centerHorizontal="true"
+        android:stretchColumns="3"
+        android:layout_marginTop="70dp">
+
+        <TableRow>
+
+            <ImageView
+                android:id="@+id/imgLogo"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="40dp"
+                android:background="@drawable/circulo"
+                android:padding="15dp"
+                android:src="@drawable/felizin" />
+
+            <ImageView
+                android:id="@+id/imgLogo2"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/circulo"
+                android:padding="15dp"
+                android:src="@drawable/calendario" />
+
+            <ImageView
+                android:id="@+id/imgLogo3"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/circulo"
+                android:padding="15dp"
+                android:src="@drawable/flor" />
+
+        </TableRow>
+    </TableLayout>
+
+    <TextView
+        android:id="@+id/txtLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/layTable"
+        android:layout_marginTop="40dp"
+        android:fontFamily="@font/comfortaabold"
+        android:text="    Garçom aqui nessa mesa de bar você já cansou de escutar dezenas do meus casos de amor"
+        android:textSize="20dp" />
+
+    <ImageButton
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:src="@drawable/ceta"
+        android:background="@drawable/circulo"
+        android:layout_below="@+id/txtLabel"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        />
+</RelativeLayout>
